@@ -914,23 +914,23 @@ var curSectionID = '';
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
 and (orientation : portrait) 
-and (-webkit-min-device-pixel-ratio : 2)
-{
-.search, 
+and (-webkit-min-device-pixel-ratio : 2) {
+.search,
 a[href="http://www.villagio.ru/"],
 a[href="http://www.villagio.ru/privelegeclub/"],
 a[href="http://www.villagio.ru/villages/"],
 .followus span,
 .links,
-.design {
+.design,
+.left-side {
 	display: none;
 }
 .wrap-inner,
 .middle,
 .two-columns_index,
 .wrapper {
-	width: 500px;
-	min-width: 500px;
+	width: 750;
+	min-width: 750;
 }
 .top-menu a {
 	padding: 15px 7px;
@@ -938,6 +938,12 @@ a[href="http://www.villagio.ru/villages/"],
 }
 .middle_left-side .content {
 	padding: 0;
+}
+.container {
+	background: none;
+}
+.content {
+	padding-left: 20px;
 }
 }
 </style>
