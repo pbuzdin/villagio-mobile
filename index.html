@@ -120,7 +120,7 @@ var google_remarketing_only = true;
 
 			<li class="top-menu__current"><a href="http://www.villagio.ru/">Главная</a></li>
 		
-			<li><a href="#">Villagio estate</a></li>
+			<li><a href="http://www.villagio.ru/villagio/">Villagio estate</a></li>
 		
 			<li><a href="http://www.villagio.ru/villages/">Поселки</a></li>
 		
@@ -547,8 +547,9 @@ and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio : 2)
 {
 .search, 
-a[href="http://www.villagio.ru/"], /* только на главной */
-a[href="http://www.villagio.ru/privelegeclub/"], /* только на главной */
+a[href="http://www.villagio.ru/"],
+a[href="http://www.villagio.ru/privelegeclub/"],
+a[href="http://www.villagio.ru/contacts/"],
 a[href="http://www.villagio.ru/villages/"], /* только на главной */
 .main-news+.category-title, /* только на главной */
 .main-news .text, /* только на главной */
@@ -668,6 +669,7 @@ top: 150px !important;
 ">Позвонить</a>
 <script>
 	$('.left-side').insertBefore($('footer'));
+	$('a[href="http://www.villagio.ru/villagio/"]').text('О компании');
 </script>
 </body>
 </html>
