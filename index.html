@@ -132,7 +132,7 @@ var google_remarketing_only = true;
 		
 			<li><a href="http://www.villagio.ru/privelegeclub/">Клуб Привилегий</a></li>
 		
-			<li><a href="#">Контакты</a></li>
+			<li><a href="http://www.villagio.ru/contacts/">Контакты</a></li>
 		
 
 </ul>
@@ -641,6 +641,9 @@ top: 150px !important;
 .copyright {
 	font: 14px Arial;
 }
+.contact__phone {
+	zoom: 1.4;
+}
 #social {
 	left: 0px;
 }
@@ -670,6 +673,7 @@ top: 150px !important;
 <script>
 	$('.left-side').insertBefore($('footer'));
 	$('a[href="http://www.villagio.ru/villagio/"]').text('О компании');
+	$('ul.top-menu').find('li>a[href="http://www.villagio.ru/villagio/"]').appendTo('ul.top-menu');
 </script>
 </body>
 </html>
