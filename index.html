@@ -542,6 +542,9 @@ var google_remarketing_only = true;
 </script>
 <!-- /Yandex.Metrika counter -->
 <style>
+.call-mobile {
+	display: none !important;
+}
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 667px) 
@@ -662,18 +665,17 @@ left: 0;
 .copyright {
 	font: 14px Arial;
 }
-.contact__phone {
-	zoom: 1.4;
+.contact__phone,
+.phone,
+.copyright {
+    font: 16px/20px Arial, sans-serif !important;
 }
 #social {
 	left: 0px;
 }
 .call-mobile {
-	display: inline-block;
+	display: inline-block !important;
 }
-}
-.call-mobile {
-	display: none !important;
 }
 </style>
 <a href="tel:+7 (495) 974-00-00" class="phone call-mobile" style="
