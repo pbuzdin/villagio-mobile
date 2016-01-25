@@ -597,7 +597,7 @@ a[href="http://www.villagio.ru/villages/"], /* только на главной 
 top: 150px !important;
 }
 .wrapper .content_index {
-    padding: 0 20px !important;
+    padding: 20px !important;
 }
 .main-news .date {
     margin: 5px 0;
@@ -656,6 +656,7 @@ top: 150px !important;
 }
 </style>
 <a href="tel:+7 (495) 974-00-00" class="phone call-mobile" style="
+display: block;
     position: fixed;
     width: 100%;
     text-transform: uppercase;
@@ -672,6 +673,7 @@ top: 150px !important;
 ">Позвонить</a>
 <script>
 	$('.left-side').insertBefore($('footer'));
+	$('.middle:nth-child(2)').insertBefore($('footer'));
 	$('a[href="http://www.villagio.ru/villagio/"]').text('О компании');
 	$('ul.top-menu').find('li>a[href="http://www.villagio.ru/villagio/"]').appendTo('ul.top-menu');
 </script>
