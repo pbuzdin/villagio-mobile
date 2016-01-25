@@ -688,10 +688,12 @@ display: block;
     letter-spacing: 1px;
 ">Позвонить</a>
 <script>
-	$('.left-side').insertBefore($('footer'));
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    	$('.left-side').insertBefore($('footer'));
 	$('.middle:nth-child(2)').insertBefore($('footer'));
 	$('a[href="http://www.villagio.ru/villagio/"]').text('О компании');
 	$('ul.top-menu').find('li>a[href="http://www.villagio.ru/villagio/"]').appendTo('ul.top-menu');
+}
 </script>
 </body>
 </html>
