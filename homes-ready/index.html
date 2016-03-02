@@ -953,19 +953,21 @@ a[href="http://www.villagio.ru/villages/"],
     z-index: 10000;
     margin-top: 70px;
     padding-top: 40px;
-    height: 10px;
-    width: 70px;
+    max-height: 0;
+    width: 150px;
     overflow: hidden;
+    height: auto;
+    transition: max-height 0.5s ease-in-out;
 }
 .left-side:hover {
 	box-shadow: 5px 5px 50px #191217;
-	height: auto;
-	width: auto;
+    max-height: 1000px;
+    width: auto;
 }
 .left-side:active {
 	box-shadow: 5px 5px 50px #191217;
-	height: auto;
-	width: auto;
+    max-height: 1000px;
+    width: auto;
 }
 .middle_left-side .content {
 	padding: 0;
