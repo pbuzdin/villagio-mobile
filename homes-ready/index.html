@@ -924,6 +924,7 @@ and (-webkit-min-device-pixel-ratio : 2) {
 .search,
 a[href="http://www.villagio.ru/"],
 a[href="http://www.villagio.ru/privelegeclub/"],
+a[href="http://www.villagio.ru/contacts/"],
 a[href="http://www.villagio.ru/villages/"],
 .followus span,
 .links,
@@ -976,8 +977,11 @@ a[href="http://www.villagio.ru/villages/"],
 .search-result__summ {
     font-size: 24px;
 }
+.search-result__filter > span {
+	display: block;
+}
 .search-result__filter {
-    font-size: 20px;
+    font-size: 18px;
 }
 .search-result__filter-item_current .filter-item_current_up {
     background: none;
@@ -1007,7 +1011,7 @@ margin: 0 20px 30px 0;
 float: left;
 }
 footer {
-    width: 710px;
+    width: 440px;
     padding: 0 20px;
 }
 .paginatoin a,
@@ -1026,6 +1030,12 @@ footer {
 }
 }
 </style>
+<script>
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	$('a[href="http://www.villagio.ru/villagio/"]').text('Компания');
+	$('ul.top-menu').find('li>a[href="http://www.villagio.ru/villagio/"]').appendTo('ul.top-menu');
+}
+</script>
 <a href="tel:+7 (495) 974-00-00" class="phone call-mobile" style="
     position: fixed;
     width: 100%;
