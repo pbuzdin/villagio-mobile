@@ -156,585 +156,212 @@ var google_remarketing_only = true;
             </nav>
                     </div>
     </header>
-    <section
-        class="middle middle_left-side ">
+<section class="middle middle_left-side ">
         <div class="container">
             <div class="content ">
-                                    <div class="logo logo_content"><a href="/"><img
-                                src="http://www.villagio.ru/local/templates/villagio/img/logo.png" alt="Villagio estate – дома, таунхаусы и апартаменты в элитных загородных поселках" title="Villagio estate – дома, таунхаусы и апартаменты в элитных загородных поселках"></a></div>
-                                            <ul class="breadcrumbs"><li><a href="/" title="Главная">Главная</a></li><li><a href="/homes/" title="Дома">Дома</a></li><li><a href="/homes/ready/" title="Готовые дома">Готовые дома</a></li></ul>                                                                    <article>
-                    <h1>Дома</h1>
-                                                                        <h2 class="h-desc">Готовые дома</h2>
-                                                                 <link rel="stylesheet" href="http://www.villagio.ru/local/templates/villagio/js/formstyler/jquery.formstyler.css">
-
-<!-- Js video_watch button -->
-<script type="text/javascript">
-$(document).ready(function() {
-$('a.recommendation__project[href="/homes/riverside/7758/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/greenfield/8886/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/greenfield/7396/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/greenfield/7422/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/greenfield/7794/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/millennium/7711/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/millennium/8841/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/greenfield/8913/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/riverside/7758/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/millennium/7763/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/millennium/7665/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-$('a.recommendation__project[href="/homes/millennium/7434/"]').append('<span class="recommendation__project-sticker slideshow-sticker" style="top: 106px; font: 11px/14px Arial,sans-serif;  color: #fff;  text-transform: uppercase;  vertical-align: middle;">Слайдшоу</span>');
-});
-</script>
-
-<script type="text/javascript">
-
-
-var curType = '';
-var curSectionID = '';
-    function setSlider() {
-        var getPrams = {};
-        location.search.substr(1).replace(/([^=&]+)=([^&]*)/g, function(o, k, v) {
-            getPrams[k] = v;
-        });
-        var hamax = (getPrams["hamax"]) ? getPrams["hamax"] : parseInt('1526'),
-            hamin = (getPrams["hamin"]) ? getPrams["hamin"] : parseInt('0'),
-            lamax = (getPrams["lamax"]) ? getPrams["lamax"] : parseInt('11723'),
-            lamin = (getPrams["lamin"]) ? getPrams["lamin"] : parseInt('1411'),
-            hamaxCur = parseInt('1526'),
-            haminCur = parseInt('0'),
-            hmin = (hamin > haminCur) ? hamin : haminCur,
-            hmax = (hamax < hamaxCur) ? hamax : hamaxCur,
-            lamaxCur = parseInt('11723'),
-            laminCur = parseInt('1411'),
-            lmin = (lamin > laminCur) ? lamin : laminCur,
-            lmax = (lamax < lamaxCur) ? lamax : lamaxCur;
-
-        $('#slider-range-inner').slider({
-            animate:false,
-            range: true,
-            min: parseInt('0'),
-            max: parseInt('1526'),
-            values: [ hmin, hmax ],
-            create: function () {
-                $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',0) +'</i>');
-                $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',1) +'</i>');
-                $("#hamin").val($(this).slider('values',0));
-                $("#hamax").val($(this).slider('values',1));
-            },
-            slide: function(event, ui) {
-                if (ui.values[0] < haminCur || ui.values[0] > hamaxCur ||
-                    ui.values[1] > hamaxCur || ui.values[1] < haminCur
-                    ) {
-                    return false
-                } else {
-                    $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ ui.values[0] +'</i>');
-                    $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ ui.values[1] +'</i>');
-                    // $('.top-menu').find('li').eq(3).html('<font color="red" style="text-weight:bold">'+ui.values[1]+' ху из ху</font>');
-					$("#hamin").val(ui.values[0]);
-                    $("#hamax").val(ui.values[1]);
-                }
-            }
-        });
-        $('#slider-range-space').slider({
-            animate:false,
-            range: true,
-            min: parseInt('1411'),
-            max: parseInt('11723'),
-            values: [ lmin, lmax ],
-            create: function () {
-                $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',0) +'</i>');
-                $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',1) +'</i>');
-                $("#lamin").val($(this).slider('values',0));
-                $("#lamax").val($(this).slider('values',1));
-            },
-            slide: function(event, ui) {
-                                if (ui.values[0] < laminCur || ui.values[0] > lamaxCur ||
-                    ui.values[1] > lamaxCur || ui.values[1] < laminCur
-                    ) {
-                    return false
-                } else {
-                    $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ ui.values[0] +'</i>');
-                    $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ ui.values[1] +'</i>');
-                    $("#lamin").val(ui.values[0]);
-                    $("#lamax").val(ui.values[1]);
-                }
-                            }
-        });
-    }
-
-
-    (function($) {
-        $(function() {
-            $('.select').styler({
-				selectSearch: false,
-			});
-        });
-    })(jQuery)
-
-    $(function() {
-        setSlider();
-
-        $('.radio-list__input-wrap').mousedown(function(){
-            changeCheck($(this));
-        });
-        $('.radio-list__input-wrap').each(function(){
-            changeCheckStart($(this));
-        });
-
-
-        function changeCheck(el){
-            var el=el, input=el.find('input').eq(0);
-            if(!input.prop('checked')){
-                $('.radio-list__input-wrap').each(function(){
-                    cInput = $(this).find('input').eq(0);
-
-                    if(cInput.attr('name') == input.attr('name')){
-                        $(this).removeClass('radio-list__item_active');
-                        cInput.prop("checked", false);
-                    }
-                });
-                el.addClass('radio-list__item_active');
-                input.prop("checked", true);
-            }
-            return true;
-        }
-        function changeCheckStart(el){
-            var el=el,input=el.find('input').eq(0);
-            if(input.prop('checked')){
-                el.addClass('active');
-            }
-            return true;
-        }
-        var isHouses = "";
-        $("#chois-object").change(function() {
-            var val = $(this).find("option:selected").val();
-            $.post("", { villageID: val, reTypedAjax: "Y" },
-                function(data){
-                    $("#object_type").html(data).trigger('refresh').trigger('change');
-
-                    if (isHouses == 1) {
-                        $("#object_type-styler").css("position", "relative").append("<div class='disabledSlider'></div>");
-                        $(".disabledSlider").css({
-                            "position" : "absolute",
-                            "top" : "-10px",
-                            "left": "-10px",
-                            "width": "340px",
-                            "height": "60px",
-                            "background": "#f4efe6",
-                            "z-index": "10",
-                            "opacity": 0.7
-                        });
-                    }
-                });
-        });
-
-        $("#object_type").change(function() {
-            var newVal = $(this).find("option:selected").val(),
-                form = $(".form-request form");
-            if (newVal == 20) {
-                $("#slider-range-space").parent().css("position", "reletive").append("<div class='disabledSlider'></div>");
-                $(".disabledSlider").css({
-                    "position" : "absolute",
-                    "top" : "-10px",
-                    "left": "-10px",
-                    "width": "330px",
-                    "height": "60px",
-                    "background": "#f4efe6",
-                    "z-index": "10",
-                    "opacity": 0.9
-                });
-            } else {
-                $(".disabledSlider").remove();
-            }
-            $.post(form.attr("action"), {
-                    object_type : newVal,
-                    setFilter : "Y",
-                    refreshSlider : "Y"
-                },
-                function(data){
-                    $("#lamin").val(data.landArea.MIN_CUR);
-                    $("#lamax").val(data.landArea.MAX_CUR);
-                    $("#hamin").val(data.houseArea.MIN_CUR);
-                    $("#hamax").val(data.houseArea.MAX_CUR);
-                    $('#slider-range-space')
-                        .find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ data.landArea.MIN_CUR +'</i>')
-                        .end()
-                        .find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ data.landArea.MAX_CUR +'</i>')
-                        .end()
-                        .slider({
-                            values: [ data.landArea.MIN_CUR, data.landArea.MAX_CUR ],
-                            create: function () {
-                                $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',0) +'</i>');
-                                $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',1) +'</i>');
-                                $("#lamin").val($(this).slider('values',0));
-                                $("#lamax").val($(this).slider('values',1));
-                            },
-                            slide: function(event, ui) {
-                                if (ui.values[0] < data.landArea.MIN_CUR || ui.values[0] > data.landArea.MAX_CUR ||
-                                    ui.values[1] > data.landArea.MAX_CUR || ui.values[1] < data.landArea.MIN_CUR
-                                    ) {
-                                    return false
-                                } else {
-                                    $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ ui.values[0] +'</i>');
-                                    $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ ui.values[1] +'</i>');
-                                    $("#lamin").val(ui.values[0]);
-                                    $("#lamax").val(ui.values[1]);
-                                }
-                            }
-                        }
-                    );
-                    $("#slider-range-inner")
-                        .find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ data.houseArea.MIN_CUR +'</i>')
-                        .end()
-                        .find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ data.houseArea.MAX_CUR +'</i>')
-                        .end()
-                        .slider({
-                            values: [ data.houseArea.MIN_CUR, data.houseArea.MAX_CUR ],
-                            create: function () {
-                                $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',0) +'</i>');
-                                $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ $(this).slider('values',1) +'</i>');
-                                $("#lamin").val($(this).slider('values',0));
-                                $("#lamax").val($(this).slider('values',1));
-                            },
-                            slide: function(event, ui) {
-                                if (ui.values[0] < data.houseArea.MIN_CUR || ui.values[0] > data.houseArea.MAX_CUR ||
-                                    ui.values[1] > data.houseArea.MAX_CUR || ui.values[1] < data.houseArea.MIN_CUR
-                                    ) {
-                                    return false
-                                } else {
-                                    $(this).find('.ui-slider-handle:first').html('<i class="ui-slider-handle__bubble">'+ ui.values[0] +'</i>');
-                                    $(this).find('.ui-slider-handle:last').html('<i class="ui-slider-handle__bubble">'+ ui.values[1] +'</i>');
-                                    $("#lamin").val(ui.values[0]);
-                                    $("#lamax").val(ui.values[1]);
-                                }
-                            }
-                        });
-
-                }, "json"
-            );
-        });
-
-
-        if (curType == 20) {
-            $("#slider-range-space").parent().css("position", "relative").append("<div class='disabledSlider'></div>");
-            $(".disabledSlider").css({
-                "position" : "absolute",
-                "top" : "-10px",
-                "left": "-10px",
-                "width": "340px",
-                "height": "60px",
-                "background": "#f4efe6",
-                "z-index": "10",
-                "opacity": 0.9
-            });
-        }
-
-
-        if (isHouses == 1) {
-            $("#object_type-styler").css("position", "relative").append("<div class='disabledSlider'></div>");
-            $(".disabledSlider").css({
-                "position" : "absolute",
-                "top" : "-10px",
-                "left": "-10px",
-                "width": "340px",
-                "height": "60px",
-                "background": "#f4efe6",
-                "z-index": "10",
-                "opacity": 0.7
-            });
-        }
-
-        if (curSectionID > 0) {
-            $("#chois-object-styler").css("position", "relative").append("<div class='disabledSlider'></div>");
-            $(".disabledSlider").css({
-                "position" : "absolute",
-                "top" : "-10px",
-                "left": "-10px",
-                "width": "340px",
-                "height": "60px",
-                "background": "#f4efe6",
-                "z-index": "10",
-                "opacity": 0.7
-            });
-        }
-    });
-
-</script>
-<div class="form-request">
-    <div class="form-request__title">Подбор объекта</div>
-    <form action="/homes/ready/" method="get">
-                    <input type="hidden" name="lamin" value="" id="lamin" />
-            <input type="hidden" name="lamax" value="" id="lamax" />
-                <input type="hidden" name="hamin" value="" id="hamin" />
-        <input type="hidden" name="hamax" value="" id="hamax" />
-        <div class="two-columns two-columns_flexible clearfix">
-            <div class="two-columns__item">
-                <div class="two-columns__item-inner">
-                    <div class="row">
-						                        <select name="object" id="chois-object" class="select" >
-                            								<option value="all">Все поселки</option>
-							                                                            <option  value="6">Monteville</option>
-                                                            <option  value="3">Millennium Park</option>
-                                                            <option  value="4">Madison Park</option>
-                                                            <option  value="292">Futuro Park</option>
-                                                            <option  value="5">Park Avenue</option>
-                                                            <option  value="240">Ренессанс Парк</option>
-                                                            <option  value="7">Гринфилд</option>
-                                                            <option  value="8">Лазурный берег</option>
-                                                            <option  value="9">Риверсайд</option>
-                                                            <option  value="10">Шервуд</option>
-                                                    </select>
-                    </div>
-                    <div class="row">
-                        <div class="form-request__title">Площадь дома, м<sup>2</sup></div>
-                    </div>
-                    <div class="row">
-                        <div id="slider-range-inner" class="slider-range"></div>
-                        <div class="ui-slider-labels ui-slider-labels_inner">
-                            <div class="ui-slider-label-ticks" style="left: 0;"><span></span> <i class="ui-slider-label-number">0</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 24.773366834170853%;"><span></span><i class="ui-slider-label-number">382</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 49.74874371859296%;"><span></span><i class="ui-slider-label-number">764</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 74.92462311557789%;"><span></span><i class="ui-slider-label-number">1146</i></div>
-                            <div class="ui-slider-label-ticks" style="right: 0;"><span></span><i class="ui-slider-label-number">1526</i></div>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <ul class="radio-list">
-                            <li class="radio-list__item">
-                                <span class="radio-list__input-wrap radio-list__item_active">
-                                    <input checked type="radio" name="issecond" value="none" class="radio-list__input" />Все
-                                </span>
-                            </li>
-                                                            <li class="radio-list__item">
-                                    <span class="radio-list__input-wrap ">
-                                        <input  type="radio" name="issecond" value="first"  class="radio-list__input" />Первичное                                    </span>
-                                </li>
-                                                            <li class="radio-list__item">
-                                    <span class="radio-list__input-wrap ">
-                                        <input  type="radio" name="issecond" value="second"  class="radio-list__input" />Вторичное                                    </span>
-                                </li>
-                                                    </ul>
-                    </div>
-                    <div class="row clearfix margin-custom">
-						                        <ul class="radio-list">
-                            <li class="radio-list__item">
-                                <span class="radio-list__input-wrap radio-list__item_active">
-                                    <input checked type="radio" name="turnkey" value="none" id="" class="radio-list__input">Все
-                                </span>
-                            </li>
-                                                            <li class="radio-list__item">
-                                    <span class="radio-list__input-wrap ">
-                                        <input  type="radio" name="turnkey" value="turnkey" id="" class="radio-list__input">Под ключ                                    </span>
-                                </li>
-                                                            <li class="radio-list__item">
-                                    <span class="radio-list__input-wrap ">
-                                        <input  type="radio" name="turnkey" value="finishing" id="" class="radio-list__input">Под отделку                                    </span>
-                                </li>
-                                                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="two-columns__item">
-                <div class="two-columns__item-inner">
-                    <div class="row">
-                        <select name="object_type" id="object_type" class="select">
-                            <option value="all">Все типы</option>
-                                                            <option selected value="9">Дома</option>
-                                                    </select>
-                    </div>
-                    <div class="row">
-                        <div class="form-request__title">Площадь участка, м<sup>2</sup></div>
-                    </div>
-                    <div class="row">
-                        <div id="slider-range-space" class="slider-range"></div>
-                        <div class="ui-slider-labels ui-slider-labels_inner">
-                            <div class="ui-slider-label-ticks" style="left: 0;"><span></span> <i class="ui-slider-label-number">1411</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 24.673366834170853%;"><span></span><i class="ui-slider-label-number">3989</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 49.74874371859296%;"><span></span><i class="ui-slider-label-number">6567</i></div>
-                            <div class="ui-slider-label-ticks" style="left: 74.98462311557789%;"><span></span><i class="ui-slider-label-number">9145</i></div>
-                            <div class="ui-slider-label-ticks" style="right: 0;"><span></span><i class="ui-slider-label-number">11723</i></div>
-                        </div>
-                                            </div>
-                    <div class="row row_btn">
-                        <button type="submit" name="setFilter" value="Y" class="button button_flax">Подобрать</button>
-                    </div>
-                </div>
-            </div>
+                                    <div class="logo logo_content"><a href="/"><img src="/local/templates/villagio/img/logo.png" alt="Villagio estate – дома, таунхаусы и апартаменты в элитных загородных поселках" title="Villagio estate – дома, таунхаусы и апартаменты в элитных загородных поселках"></a></div>
+                                            <ul class="breadcrumbs"><li><a href="/" title="Главная">Главная</a></li><li><a href="/villages/" title="Поселки">Поселки</a></li></ul>                                                                    <article>
+                    <h1>Futuro Park</h1>
+                                                 <div class="plate">Таунхаусы премиум-класса на&nbsp;Новорижском шоссе от&nbsp;12,6&nbsp;млн&nbsp;руб.
+<!--ПОСТРОЙ СВОЕ БУДУЩЕЕ В НОВОМ ПОСЕЛКЕ FUTURO PARK--></div>
+    <p class="p-desc"> Современные таунхаусы и квартиры в Истринском районе – желанное жилье в престижном месте Подмосковья. Villagio Estate представляет новый проект премиум-класса Futuro Park – поселок, где соединились смелые архитектурные решения, великолепное окружение и комфортная инфраструктура. </p>
+    <div class="img-plate">
+                    <img src="/upload/iblock/3ca/p15_TownSport720.jpg">
+            <span class="button button_img-plate-request" onclick="$('#js-question').arcticmodal();">Оставить заявку</span>
+                
+<div class="hidden">
+    <a href="/upload/iblock/9c7/i15_TownSport.jpg" data-fancybox-group="gallery_299" class="fancybox"></a>
+    <a href="/upload/iblock/d53/r8 Двор 2244х5079_.jpg" data-fancybox-group="gallery_299" class="fancybox"></a>
+    <a href="/upload/iblock/cde/u2 Блок Двор 2244х3331.jpg" data-fancybox-group="gallery_299" class="fancybox"></a>
+    <a href="/upload/iblock/621/r1 AfterRain 2244х3331.jpg" data-fancybox-group="gallery_299" class="fancybox"></a>
+    <a href="/upload/iblock/6b9/x0 Угол  2244x5079.jpg" data-fancybox-group="gallery_299" class="fancybox"></a>
+    <a href="/upload/iblock/db1/a16 Spa 2244х3331.jpg" data-fancybox-group="gallery_298" class="fancybox"></a>
+    <a href="/upload/iblock/707/o9_Парк 2244x5079.jpg" data-fancybox-group="gallery_298" class="fancybox"></a>
+    <a href="/upload/iblock/7a3/j6_Парк у ресторана 2244х5079.jpg" data-fancybox-group="gallery_298" class="fancybox"></a>
+    <a href="/upload/iblock/61e/e11 вход_ 2244х3331.jpg" data-fancybox-group="gallery_297" class="fancybox"></a>
+    <a href="/upload/iblock/f98/x10 Бассейн 2244х3331_модели.jpg" data-fancybox-group="gallery_297" class="fancybox"></a>
+    <a href="/upload/iblock/f94/w4 КПП и Школа.jpg" data-fancybox-group="gallery_297" class="fancybox"></a>
+    <a href="/upload/iblock/813/106_RP_Sunny.jpg" data-fancybox-group="gallery_294" class="fancybox"></a>
+    <a href="/upload/iblock/ea0/104_RP_Backyard (1).jpg" data-fancybox-group="gallery_294" class="fancybox"></a>
+    <a href="/upload/iblock/0b4/103_RP_JustMarried.jpg" data-fancybox-group="gallery_294" class="fancybox"></a>
+    <a href="/upload/iblock/16d/102_RP_AfterRain.jpg" data-fancybox-group="gallery_294" class="fancybox"></a>
+    <a href="/upload/iblock/31e/101_RP_TownSport.jpg" data-fancybox-group="gallery_294" class="fancybox"></a>
+</div>                            <div class="img-plate__menu">
+    <div class="img-plate__menu-item" id="bx_2037796212_297">
+        <div class="img-plate__menu-head">
+            <a class="opengallery" rel="gallery_297" href="">
+                <div class="img-plate__menu-title">
+                    Инфраструктура                </div>
+                <div class="img-plate__menu-length">
+                    3 фотографии                </div>
+            </a>
         </div>
-    </form>
-</div>
-<div class="search-result">
- 
-    <div class="search-result__summ">всего 131 результатов</div>
-    <div class="search-result__filter">
-        <span>Сортировать по</span>
-        <a
-            href="#"
-            class="search-result__filter-item
-                                                    ">площади участка
+        <a rel="gallery_297" href="" class="img-plate__menu-link opengallery">
+            <img src="/upload/resize_cache/iblock/d3d/173_115_2/v10 Бассейн 2244х3331.jpg" alt="" class="img-plate__menu-img">
         </a>
-        <a
-            href="#"
-            class="search-result__filter-item
-                                                ">площади дома
-        </a>
-				<a
-            href="#"
-            class="search-result__filter-item
-                search-result__filter-item_current                    filter-item_current_up            ">релевантности
-        </a>
-		    </div>
-    <hr class="hr_thin">
-    <div class="search-result__item">
-        <div class="recommendation">
-		                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/2f6/210_140_2/p-394675616.jpg" width="210" height="140" alt="ЧЕС-6-028" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ЧЕС-6-028</b>Millennium Park                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>2801.00 м<sup>2</sup></dd>
-                                                                            <dt>Площадь дома</dt>
-                            <dd>826.00 м<sup>2</sup></dd>
-                                                                    </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/185/210_140_2/p-411283168.jpg" width="210" height="140" alt="ЧЕС-7-052а" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ЧЕС-7-052а</b>Millennium Park                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>2029.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/dc6/210_140_2/p-400497836.jpg" width="210" height="140" alt="СПК-2-092" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>СПК-2-092</b>Monteville                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>1886.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                                        </div>
-                    </div>
-                    <div class="search-result__item">
-                        <div class="recommendation">
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/671/210_140_2/p-394675804.jpg" width="210" height="140" alt="ПСК-031" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ПСК-031</b>Гринфилд                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                                    <span class="recommendation__project-sticker">
-                                <img src="http://www.villagio.ru/local/templates/villagio/img/ico-star.png" class="ico ico_sticker" alt=""><span class="recommendation__project-sticker-text">Спецпредложение</span>
-                            </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>1938.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/9a8/210_140_2/p-380950511.jpg" width="210" height="140" alt="ПСК-040" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ПСК-040</b>Гринфилд                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>1957.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/3d6/210_140_2/p-434321131.jpg" width="210" height="140" alt="ПСК-107" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ПСК-107</b>Гринфилд                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>2456.00 м<sup>2</sup></dd>
-                                                                            <dt>Площадь дома</dt>
-                            <dd>444.57 м<sup>2</sup></dd>
-                                                                    </dl>
-                </div>
-                                        </div>
-                    </div>
-                    <div class="search-result__item">
-                        <div class="recommendation">
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/9b3/210_140_2/p-380950468.jpg" width="210" height="140" alt="ЧЕС-2-120" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ЧЕС-2-120</b>Millennium Park                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>4985.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/6dc/210_140_2/p-388037056.jpg" width="210" height="140" alt="ЧЕС-3-084" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ЧЕС-3-084</b>Millennium Park                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-key.png" alt="Под ключ" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>2566.00 м<sup>2</sup></dd>
-                                                                                            </dl>
-                </div>
-                				                            <div class="recommendation__item">
-                    <a href="#" class="recommendation__project">
-                                                    <img src="http://www.villagio.ru/upload/resize_cache/iblock/7b9/210_140_2/p-380950489.jpg" width="210" height="140" alt="ЧЕС-1-067" class="recommendation__project-img">
-                                                <span class="recommendation__project-title">
-                            <b>ЧЕС-1-067</b>Millennium Park                            <img src="http://www.villagio.ru/local/templates/villagio/img/ico-roller.png" alt="Под отделку" class="recommendation__project-title-ico">                        </span>
-                                            </a>
-                    <dl class="project-features project-features_recommendation">
-                        <dt>Тип объекта</dt>
-                        <dd>Дом</dd>
-                                                    <dt>Площадь участка</dt>
-                            <dd>2455.00 м<sup>2</sup></dd>
-                                                                            <dt>Площадь дома</dt>
-                            <dd>400.00 м<sup>2</sup></dd>
-                                                                    </dl>
-                </div>
-                				                    </div>
     </div>
-    <div class="paginatoin">
-<ul class="clearfix">
-		<li class="paginatoin__current"><a href>1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li><a href="#">...</a></li>
-		<li><a href="#">15</a></li>
-</ul>
-</div></div>
- 
+    <div class="img-plate__menu-item" id="bx_2037796212_298">
+        <div class="img-plate__menu-head">
+            <a class="opengallery" rel="gallery_298" href="">
+                <div class="img-plate__menu-title">
+                    Парк                </div>
+                <div class="img-plate__menu-length">
+                    3 фотографии                </div>
+            </a>
+        </div>
+        <a rel="gallery_298" href="" class="img-plate__menu-link opengallery">
+            <img src="/upload/resize_cache/iblock/18b/173_115_2/n16 Spa 2244х3331.jpg" alt="" class="img-plate__menu-img">
+        </a>
+    </div>
+    <div class="img-plate__menu-item" id="bx_2037796212_299">
+        <div class="img-plate__menu-head">
+            <a class="opengallery" rel="gallery_299" href="">
+                <div class="img-plate__menu-title">
+                    Таунхаусы                </div>
+                <div class="img-plate__menu-length">
+                    5 фотографий                </div>
+            </a>
+        </div>
+        <a rel="gallery_299" href="" class="img-plate__menu-link opengallery">
+            <img src="/upload/resize_cache/iblock/3b1/173_115_2/g1 AfterRain 2244х3331.jpg" alt="" class="img-plate__menu-img">
+        </a>
+    </div>
+    <div class="img-plate__menu-item" style="float:right; margin-right: 25px; margin-top: 15px;">
+        <div class="img-plate__menu-head">
+            <a href="photo/" class="img-plate__menu-link img-plate__menu-link_head">Все альбомы</a>
+        </div>
+    </div>
+</div>            </div>    <p class="p-small"><i class="space__title">Расположение</i> — <b>Новорижское шоссе, 23 км</b></p>
+    <hr class="hr_thin">
+    <div class="four-column clearfix">               <div class="four-column__item">
+                <div class="space"><img src="/upload/iblock/f69/futuro-ico-1.jpg" class="space__img">
 
+                    <div class="space__title">Общая площадь</div>
+
+                    <div class="space__size">17,8 га</div>
+                </div>
+            </div>
+                         <div class="four-column__item">
+                <div class="space"><img src="/upload/iblock/6f9/futuro-ico-2.jpg" class="space__img">
+
+                    <div class="space__title">Площадь таунхаусов</div>
+
+                    <div class="space__size">168 и 238 кв.м</div>
+                </div>
+            </div>
+            </div>
+    <div class="plate plate_small">
+        <h2>Инфраструктура поселка</h2>
+
+        <div class="two-columns">
+            <div class="two-columns__item">                     <h3 class="list-title">Планируется:</h3>
+
+                    <ul class="list list_thin">                             <li>Детский сад</li>
+                                                    <li>Начальная школа</li>
+                                                    <li>Медицинский центр</li>
+                                                    <li>Магазин</li>
+                                                    <li>Ресторан с просторной летней верандой на кровле</li>
+                                                    <li>Плавательный бассейн</li>
+                                                    <li>Детский бассейн</li>
+                                                    <li>Тренажерный зал</li>
+                                                    <li>Фитобар</li>
+                                                    <li>Детские площадки</li>
+                                                    <li>Спортивные площадки</li>
+                                                    <li>Многоуровневый паркинг</li>
+                                                    <li>Вертолетная площадка для служб МЧС</li>
+                         </ul>
+                 </div>
+
+            <div class="two-columns__item">                     <h3 class="list-title">Рядом:</h3>
+
+                    <ul class="list list_thin">                             <li>Общеобразовательные школы</li>
+                                                    <li>Детские сады</li>
+                                                    <li>Центр иностранных языков</li>
+                                                    <li>Семейные центры</li>
+                                                    <li>Фитнес-центры</li>
+                                                    <li>Салоны красоты и спа-комплексы</li>
+                                                    <li>Рестораны и кафе</li>
+                                                    <li>Магазины торговых сетей</li>
+                         </ul>
+                 </div>
+        </div>
+
+    <!--  <div class="link"><a href="./infra/">Об инфраструктуре</a></div> -->
+    </div>
+    <div class="middle middle_content middle_right-side">
+        <div class="container">
+            <div class="content"> <p>В Futuro Park возводятся таунхаусы и многоквартирные малоэтажные дома оригинальной современной архитектуры. Неповторимый облик поселку придают стеклянные фасады, подчеркивающие выразительную геометрию улиц и ландшафтного дизайна. Такое решение, в большей степени характерное для Западной и Северной Европы, при строительстве загородного ЖК в Подмосковье применяется впервые.</p>
+ 
+<p>Таунхаусы Futuro Park представляют собой двух- и трехуровневые апартаменты с эксплуатируемой кровлей и участком от 2 до 4,4 соток. Оптимальная площадь секций, панорамное остекление, открытые террасы на нижнем и верхнем уровнях – идеальный вариант загородного жилья для тех, кто мечтает купить таунхаус на Новорижском шоссе.</p>
+ 
+<p>На территории нового поселка планируется разместить образовательный центр для детей дошкольного и младшего школьного возраста, а также развлекательный комплекс, включающий ресторан, бассейн и фитнес-центр. Близость к селу «Покровское» обеспечивает удобную транспортную доступность Futuro Park от Москвы, Нахабино и Звенигорода.</p>
+ 
+<p>Малоэтажные жилые комплексы становятся все более востребованным форматом загородной недвижимости Подмосковья. Если вы желаете купить таунхаус от надежного застройщика или рассматриваете вариант квартиры на Новорижском шоссе, свяжитесь с нашими экспертами по телефону, указанному на сайте, или оставьте заявку в режиме онлайн.</p>
+  </div>
+        </div>
+                     <!--noindex--><aside class="right-side">
+                <div class="right-side__content"> <div class="right-side__title">План поселка</div>
+<p>Futuro Park – поселок мультиформатной застройки. На территории 17,8 га возводятся современные комфортабельные таунхаусы и трехэтажные корпуса с квартирами.</p>
+<a href="/villages/futuropark/genplan/">
+<img src="/pic/futur-genplanchik.jpg" alt="">
+</a><div class="right-side__link"><a href="/villages/futuropark/genplan/"></a><a href="/villages/futuropark/genplan/">План поселка</a></div>
+<hr>
+<div class="right-side__title">Безопасность</div>
+<p>
+Поселок находится под надежной круглосуточной охраной. Въезд на его территорию осуществляется строго по пропускам.
+</p>
+<div class="right-side__link"><a href="/villages/futuropark/safety/">Безопасность</a></div>
+<hr>
+<div class="right-side__title">Благоустройство</div>
+<p>
+В центре поселка создан роскошный парк с оригинальной геометрической композицией, сформированной из искусственных водоемов и прогулочных дорожек.
+</p>
+<div class="right-side__link"><a href="/villages/futuropark/infra/">Благоустройство</a></div> </div>
+            </aside><!--/noindex-->  </div>
+
+    <div class="hr"><span class="button button_hr" onclick="$('#js-question').arcticmodal();">Оставить заявку</span>
+        <hr>
+    </div>
+ 
+   
+<div style="display: none;">
+    <div class="box-modal" id="js-question">
+        <div class="form-request form-request-modal">
+            <div class="box-modal_close arcticmodal-close"></div>
+            <div class="h-desc">Отправить заявку</div>
+            <div class="addok"></div>
+            <form name="request" action="/villages/futuropark/" method="POST" enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid" value="02beae980345f8ba408bfc085141d962"><input type="hidden" name="WEB_FORM_ID" value="1">                        <input type="hidden" name="lang" value="ru">
+            <div class="row clearfix">
+                                        <input type="hidden" name="form_hidden_12" value="http://www.villagio.ru/villages/futuropark/">
+						
+                                                            <div class="row__item">
+                            <label for="">Ваше имя <i>*</i></label>
+                            <input type="text" name="form_text_1" class="input__text input__text_name" value=""><i class="error">текст ошибки</i>
+                        </div>
+                                                            <div class="row__item">
+                            <label for="">Телефон  <i>*</i></label>
+                            <input type="text" onkeyup="return setOnlyPhoneNumber(this);" name="form_text_2" class="input__text input__text_phone" value=""><i class="error">текст ошибки</i>
+                        </div>
+                                                            <div class="row__item">
+                            <label for="">Email <i>*</i></label>
+                            <input type="text" name="form_email_3" class="input__text input__text_email" value=""><i class="error">текст ошибки</i>
+                        </div>
+                                                                </div>
+            <div class="row clearfix">
+                <div class="row__item">
+                                                <label for="">Сообщение</label>
+                            <textarea name="form_textarea_4" id="" class="textarea" cols="30" rows="10"></textarea>
+                                        </div>
+                <div class="row__item">
+					
+                    <input type="hidden" name="web_form_apply" value="Y">
+                    <button type="submit" name="web_form_submit" class="button button_request">Отправить заявку</button>
+                </div>
+            </div>
+            </form>        </div>
+    </div>
+</div> 
+    <div><br><a class="link-back " href="/villages/">Все поселки</a></div>
     </article>
 </div>
 <!-- /.content -->
@@ -749,105 +376,25 @@ var curSectionID = '';
     </script>
 <nav>
     <ul class="left-menu hidden_left_menu">
-                                        <li class="left-menu__item left-menu__item_current"><a class="left-menu__link" href="#">Готовые дома</a></li>
-                                                                    <li class="left-menu__item "><a class="left-menu__link" href="#">Спецпредложения</a></li>
-                                                                    <li class="left-menu__item "><a class="left-menu__link" href="#">Каталог проектов</a>
+                                        <li class="left-menu__item "><a class="left-menu__link" href="/villages/monteville/">Monteville</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/millennium/">Millennium Park</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/madisonpark/">Madison Park</a></li>
+                                                                    <li class="left-menu__item openSection left-menu__item_current"><a class="left-menu__link" href="/villages/futuropark/">Futuro Park</a>
                 <ul class="left-menu__submenu depth_level_1">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Адриатика</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Болонья</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Джотто</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Палермо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Санторини</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Ампир</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Амадей</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Амеро</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Аттик</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Барокко</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Боско</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Верона</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Грандо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Империал</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Капри</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Касабланка</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Классик</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Мерано</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Кристалл</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Мириам</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Норфолк</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Палаццо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Регина</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Романтик</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Руссо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Сансовино</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Соренто</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Торро</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Феличе</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Франческа</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Астро</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Аксион-1</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Джермер</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Максвелл</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Морли</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Мюон</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Ольберс</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Тициус</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Торус</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Вернисаж</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Богема-3</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Крит-2М</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Деко</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Авиньон</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Баден-Баден</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Биарриц</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Бильбао</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Грац</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Комо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Лацио</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Монте</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Монтрё</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Мюнхен</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Неаполь</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Импрессио</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Матисс</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Моне</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Ренуар</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Мажор</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Гиперион</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Парфенон</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Паром</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Риголетто</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Санрайз</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Вега</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Неоклассика</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Ника 3</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Босфор-3</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Глория-3</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Попурри</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Адажио-1</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Арабеска</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Катильон</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Рапсодия</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Кварта</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Квинта</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Октава</a></li>
-                                            </ul></li>                                            <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Ренессанс</a>
-                <ul class="left-menu__submenu depth_level_3">
-                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Бокаччо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Орландо</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">Тициан</a></li>
-                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="#">4400</a></li>
-                                            </ul></li></ul></li></ul></li>                                            <li class="left-menu__item "><a class="left-menu__link" href="#">Инфраструктура</a></li>
-                                                                    <li class="left-menu__item "><a class="left-menu__link" href="#">Подбор дома</a></li>
+                                                                   <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/arkhitektura/">Архитектура</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/safety/">Безопасность</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/blagoustroystvo/">Благоустройство</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/infra/">Инфраструктура</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/genplan/">План посёлка</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/planirovki/">Планировки</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/location/">Расположение</a></li>
+                                                                    <li class="left-menu__submenu-item "><a class="left-menu__submenu-link" href="/villages/futuropark/photo/">Фото</a></li>
+                                            </ul></li>                                            <li class="left-menu__item "><a class="left-menu__link" href="/villages/parkavenue/">Park Avenue</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/renaissancepark/">Ренессанс Парк</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/greenfield/">Гринфилд</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/lazurnybereg/">Лазурный берег</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/riverside/">Риверсайд</a></li>
+                                                                    <li class="left-menu__item "><a class="left-menu__link" href="/villages/sherwood/">Шервуд</a></li>
                                             </ul>
 </nav>
     </aside>
